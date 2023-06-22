@@ -1,8 +1,20 @@
 <template>
+        <el-header style="margin: 0; padding: 0; height: 80px">
+        <el-container style="margin: 0; padding: 0; height: 80px;background-color: #6366f1;">
+          <div style="margin: auto; margin-left: 100px ;"  >
+            <h1 style="color: #fff;">欢迎您登录后台管理系统!</h1>
+          </div>
+          <div style="margin: auto; margin-right: 50px">
+            <el-button  size="default" @click="logout"
+              >注销</el-button
+            >
+          </div></el-container
+        >
+      </el-header>
   <el-container>
     <el-aside width="250px">
       <el-container>
-        <div>后台管理系统</div>
+     <!-- 头部 -->
       </el-container>
       <el-menu
         :default-active="$route.path"
@@ -55,18 +67,7 @@
       </el-menu></el-aside
     >
     <el-container>
-      <el-header style="margin: 0; padding: 0; height: 80px">
-        <el-container style="margin: 0; padding: 0; height: 80px">
-          <div style="margin: auto; margin-left: 100px">
-            <h1>欢迎您登录后台管理系统!</h1>
-          </div>
-          <div style="margin: auto; margin-right: 50px">
-            <el-button type="primary" size="default" @click="logout"
-              >注销</el-button
-            >
-          </div></el-container
-        >
-      </el-header>
+
       <el-main>
         <router-view></router-view>
       </el-main>

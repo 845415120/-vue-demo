@@ -27,15 +27,15 @@
       </el-container>
       <!-- 第二行 -->
       <el-container>
-        <div>是否上架</div>
-        <div>
+        <div class="input-tip">是否上架:</div>
+        <div class="input-field">
           <el-select v-model="sellModeString">
             <el-option key="0" label="否" value="0"></el-option>
             <el-option key="1" label="是" value="1"></el-option>
             <el-option key="2" label="全部" value="2"></el-option>
           </el-select>
         </div>
-        <div>是否过期</div>
+        <div  class="input-tip">是否过期</div>
         <div>
           <el-select v-model="expModeString">
             <el-option key="0" label="否" value="0"></el-option>
